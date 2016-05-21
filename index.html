@@ -5,11 +5,23 @@
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <h1>AES json</h1>
+
+    <input id="password" value="passsword" />
+
+    <p>
+      <textarea id="inputdata" rows="4" cols="50">texto a ser cifrado</textarea>
+      <textarea id="encryptedout" rows="4" cols="50"></textarea>
+      <button id="encryptbutton">Encrypt</button>
+    </p>
+
+    <p>
+      <textarea id="inputencrypted" rows="4" cols="50"></textarea>
+      <textarea id="dataout" rows="4" cols="50"></textarea>
+      <button id="decryptbutton">Decrypt</button>
+    </p>
+
   </body>
 
   <script>
