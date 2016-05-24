@@ -1,6 +1,7 @@
-const AESjson = require('aes_json');
+import * as AESjson from 'aes_json'
 
-var pencrypted = function(iv, salt, cipher){
+
+var pencrypted = (iv, salt, cipher) => {
     encryptedout.value = AESjson.implode(iv, salt, cipher);
     inputencrypted.value = encryptedout.value;
 };
